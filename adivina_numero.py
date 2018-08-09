@@ -1,27 +1,14 @@
 
 
 
-number_to_guess = 2
+number_to_guess = int(input("Jugador 1: indica el numero a adivinar: "))
 
-user_number = int(input('Adivina un numero: '))
+user_number = int(input('Jugador 2: adivina el numero: '))
 
-if number_to_guess == user_number:
-    print('Has ganado')
-else:
-    user_number = int(input('Introduzca otro numero: '))
+while number_to_guess != user_number:
     if number_to_guess == user_number:
         print('Has ganado')
     else:
         user_number = int(input('Introduzca otro numero: '))
-        if number_to_guess == user_number:
-            print('Has ganado')
-        else:
-            user_number = int(input('Introduzca otro numero: '))
-            if number_to_guess == user_number:
-                print('Has ganado')
-            else:
-                user_number = int(input('Introduzca otro numero: '))
-                if number_to_guess == user_number:
-                    print('Has ganado')
-                else:
-                    print('Has perdido')
+
+print("Juego terminado")
